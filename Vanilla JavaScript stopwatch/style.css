@@ -1,0 +1,60 @@
+/* Variables */
+/* Mixins */
+body {
+  background-color: #499066;
+  font-family: "Roboto", sans-serif;
+  height: 100vh; /* Changed to viewport height for better responsiveness */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for better layout control */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.wrapper {
+  width: 80%; /* Changed to a percentage for better responsiveness */
+  max-width: 600px; /* Added max-width for better readability on larger screens */
+  margin: 30px auto;
+  color: #fff;
+  text-align: center; /* Center align text */
+}
+
+h1, h2, h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em; /* Increased font size */
+  text-transform: uppercase;
+  color: #333;
+  line-height: 1.2; /* Adjusted line height for better readability */
+  margin-bottom: 20px; /* Added spacing below headings */
+}
+
+#seconds, #tens {
+  font-size: 3em; /* Increased font size */
+  font-weight: bold;
+  color: #fff;
+}
+
+p {
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px; /* Added spacing below paragraphs */
+}
+
+button {
+  border-radius: 20px;
+  /* Increased border radius for rounded corners */
+  background: #499066;
+  color: #fff;
+  border: none; /* Removed border */
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 15px 30px; /* Adjusted padding for better button size */
+  width: auto; /* Allow button width to adjust based on content */
+  outline: none;
+  transition: background-color 0.3s ease; /* Simplified transition */
+}
+button:hover {
+  background-color: #386e4e; /* Darken background color on hover */
+}/*# sourceMappingURL=style.css.map */
