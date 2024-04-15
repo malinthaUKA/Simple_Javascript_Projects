@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #374542, #5b548a);
+    color: #fff; /* text color */ 
+    margin: 100px auto 0;
+    border-radius: 20px; /* Corner round */
+    padding: 40px 35px; /* space between border and content */
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex; // convert parent div to flex box(default value is row - child elements arrange to horizental axis), ----------flex direction--------- flex direction propety has four values 1- row(default value(horizental)) 2. row-reverse(horizental but right to left direction) 3. column(direction to vertical axis) 4. column-reverse(vertical axis but bottum to top direction),    -----------------flex-wrap----------  flex warap is use when display: flex;( here default valu set to flex direction: row; auto ) on, and parent div is longer where parent div set top to bottum like justify(main parent div eke diga wedi nam pahalata ganata ajus wenwa, namuth column ekak widiyata newey)
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+    padding-left: 32%;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; // 20px is left and right
+}
+
+.details .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    // width: 170px;
+}
+
+.details .col svg{
+    margin-right: 10px;
+}
+/**/
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none; // first come to webpage user cannot see this div,( when user search for city its visible - this visible crate using javasctipt )
+}
+
+.err{
+    text-align: left;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 4%;
+    display: none;
+}
